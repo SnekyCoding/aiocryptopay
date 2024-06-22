@@ -12,6 +12,8 @@ class Invoice(BaseModel):
     hash: str
     asset: Optional[Union[Assets, str]] = None
     amount: Union[int, float]
+    mini_app_invoice_url: str
+    web_app_invoice_url: str
     bot_invoice_url: str
     description: Optional[str] = None
     created_at: datetime
